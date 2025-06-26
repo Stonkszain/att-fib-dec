@@ -15,12 +15,12 @@ const treatmentOptions = [
         name: 'Rate Control Only (meds to slow HR)',
         description: 'Medications focused on slowing the heart rate to manage symptoms, without aiming to restore normal rhythm.',
         weights: {
-            slider1: 3, // Symptom Relief
-            slider2: 4, // Avoiding Long-Term Medications (less invasive than rhythm control meds)
-            slider3: 2, // Minimizing Stroke Risk (indirectly, if HR is controlled)
-            slider4: 5, // Minimizing Risk of Invasive Procedures (very high)
-            slider5: 1, // Maintaining Normal Heart Rhythm (low)
-            slider6: 3  // Quality of Life and Daily Activity
+            slider1: 1, // Symptom Relief
+            slider2: 2, // Avoiding Long-Term Medications (less invasive than rhythm control meds)
+            slider3: 1, // Minimizing Stroke Risk (indirectly, if HR is controlled)
+            slider4: 3, // Minimizing Risk of Invasive Procedures (very high)
+            slider5: 0, // Maintaining Normal Heart Rhythm (low)
+            slider6: 1  // Quality of Life and Daily Activity
         }
     },
     {
@@ -28,12 +28,12 @@ const treatmentOptions = [
         name: 'Rhythm Control with Meds (e.g., amiodarone)',
         description: 'Medications (antiarrhythmics) used to restore and maintain a normal heart rhythm.',
         weights: {
-            slider1: 5, // Symptom Relief (high potential)
+            slider1: 3, // Symptom Relief (high potential)
             slider2: 1, // Avoiding Long-Term Medications (low, requires daily meds)
-            slider3: 3, // Minimizing Stroke Risk (if rhythm is maintained)
-            slider4: 4, // Minimizing Risk of Invasive Procedures (high, non-invasive)
-            slider5: 5, // Maintaining Normal Heart Rhythm (very high)
-            slider6: 4  // Quality of Life and Daily Activity
+            slider3: 2, // Minimizing Stroke Risk (if rhythm is maintained)
+            slider4: 1, // Minimizing Risk of Invasive Procedures (high, non-invasive)
+            slider5: 3, // Maintaining Normal Heart Rhythm (very high)
+            slider6: 3  // Quality of Life and Daily Activity
         }
     },
     {
@@ -41,12 +41,12 @@ const treatmentOptions = [
         name: 'Electrical Cardioversion (reset rhythm)',
         description: 'A procedure using electrical shocks to reset the heart to a normal rhythm.',
         weights: {
-            slider1: 5, // Symptom Relief (immediate)
+            slider1: 2, // Symptom Relief (immediate)
             slider2: 3, // Avoiding Long-Term Medications (can be one-off, but often followed by meds)
-            slider3: 3, // Minimizing Stroke Risk (if successful)
-            slider4: 2, // Minimizing Risk of Invasive Procedures (moderate, it's a procedure)
-            slider5: 5, // Maintaining Normal Heart Rhythm (direct aim)
-            slider6: 4  // Quality of Life and Daily Activity
+            slider3: 1, // Minimizing Stroke Risk (if successful)
+            slider4: 0, // Minimizing Risk of Invasive Procedures (moderate, it's a procedure)
+            slider5: 3, // Maintaining Normal Heart Rhythm (direct aim)
+            slider6: 3  // Quality of Life and Daily Activity
         }
     },
     {
@@ -54,12 +54,12 @@ const treatmentOptions = [
         name: 'Catheter Ablation (procedure to isolate AF triggers)',
         description: 'An invasive procedure to create scar tissue in the heart to block abnormal electrical signals causing AF.',
         weights: {
-            slider1: 5, // Symptom Relief (high potential for long-term)
-            slider2: 5, // Avoiding Long-Term Medications (high potential to reduce/eliminate meds)
-            slider3: 4, // Minimizing Stroke Risk (if successful)
-            slider4: 1, // Minimizing Risk of Invasive Procedures (very low, it is invasive)
-            slider5: 5, // Maintaining Normal Heart Rhythm (primary goal)
-            slider6: 5  // Quality of Life and Daily Activity
+            slider1: 3, // Symptom Relief (high potential for long-term)
+            slider2: 3, // Avoiding Long-Term Medications (high potential to reduce/eliminate meds)
+            slider3: 2, // Minimizing Stroke Risk (if successful)
+            slider4: 0, // Minimizing Risk of Invasive Procedures (very low, it is invasive)
+            slider5: 3, // Maintaining Normal Heart Rhythm (primary goal)
+            slider6: 3  // Quality of Life and Daily Activity
         }
     },
     {
@@ -67,12 +67,12 @@ const treatmentOptions = [
         name: 'Anticoagulation Only (stroke prevention)',
         description: 'Medications (blood thinners) focused solely on preventing blood clots and stroke, without addressing heart rhythm.',
         weights: {
-            slider1: 1, // Symptom Relief (low)
-            slider2: 2, // Avoiding Long-Term Medications (low, requires daily meds)
-            slider3: 5, // Minimizing Stroke Risk (very high)
-            slider4: 5, // Minimizing Risk of Invasive Procedures (very high)
-            slider5: 1, // Maintaining Normal Heart Rhythm (low)
-            slider6: 2  // Quality of Life and Daily Activity
+            slider1: 0, // Symptom Relief (low)
+            slider2: 1, // Avoiding Long-Term Medications (low, requires daily meds)
+            slider3: 4, // Minimizing Stroke Risk (very high)
+            slider4: 3, // Minimizing Risk of Invasive Procedures (very high)
+            slider5: 0, // Maintaining Normal Heart Rhythm (low)
+            slider6: 0  // Quality of Life and Daily Activity
         }
     },
     {
@@ -80,12 +80,12 @@ const treatmentOptions = [
         name: 'Left Atrial Appendage Closure (non-medication stroke prevention, e.g., Watchman device)',
         description: 'A procedure to close off the left atrial appendage, where most stroke-causing clots forms in AF patients.',
         weights: {
-            slider1: 1, // Symptom Relief (low)
-            slider2: 5, // Avoiding Long-Term Medications (high potential to reduce/eliminate blood thinners)
-            slider3: 5, // Minimizing Stroke Risk (very high)
-            slider4: 1, // Minimizing Risk of Invasive Procedures (very low, it is invasive)
-            slider5: 1, // Maintaining Normal Heart Rhythm (low)
-            slider6: 3  // Quality of Life and Daily Activity
+            slider1: 0, // Symptom Relief (low)
+            slider2: 3, // Avoiding Long-Term Medications (high potential to reduce/eliminate blood thinners)
+            slider3: 4, // Minimizing Stroke Risk (very high)
+            slider4: 0, // Minimizing Risk of Invasive Procedures (very low, it is invasive)
+            slider5: 0, // Maintaining Normal Heart Rhythm (low)
+            slider6: 0  // Quality of Life and Daily Activity
         }
     }
 ];
